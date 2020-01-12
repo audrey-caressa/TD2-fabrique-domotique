@@ -23,12 +23,16 @@ public class AppliDomotique {
     public static void connecter(int type) {
         switch (type) {
             case 1:
-                Cafetière myCafetière = new Cafetière();
+                Connectable myCafetière = new Cafetière();
                 myCafetière.equiper("Filtre");
+                objets.add(myCafetière);
+                System.out.println("Cafetière ajoutée!");
                 break;
             case 2:
-                Radio myRadio = new Radio();
+                Connectable myRadio = new Radio();
                 myRadio.equiper("Antenne");
+                objets.add(myRadio);
+                System.out.println("Radio ajoutée!");
                 break;
         }
     }

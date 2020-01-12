@@ -1,6 +1,6 @@
 package fr.univamu.iut.exo1;
 
-public class Cafetière {
+public class Cafetière implements Connectable {
     public String nom;
 
     public String setNom(String nom)
@@ -13,6 +13,7 @@ public class Cafetière {
         return nom;
     }
 
+    @Override
     public void equiper(String gadget)
     {
         System.out.println(gadget + " équipé");
